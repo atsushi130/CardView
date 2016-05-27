@@ -11,11 +11,28 @@
             <rect key="frame" x="0.0" y="0.0" width="322" height="498"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWp-fD-fhG">
-                    <rect key="frame" x="1" y="0.0" width="321" height="340"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWp-fD-fhG">
+                    <rect key="frame" x="0.0" y="0.0" width="322" height="348"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebv-eD-07I">
+                    <rect key="frame" x="0.0" y="348" width="322" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="deV-1E-xPl"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ebv-eD-07I" firstAttribute="leading" secondItem="aN6-CP-uva" secondAttribute="leading" id="CSf-JS-nOS"/>
+                <constraint firstItem="Ebv-eD-07I" firstAttribute="top" secondItem="BWp-fD-fhG" secondAttribute="bottom" id="Ds9-zB-GgP"/>
+                <constraint firstAttribute="trailing" secondItem="BWp-fD-fhG" secondAttribute="trailing" id="Iko-Gn-FLQ"/>
+                <constraint firstItem="BWp-fD-fhG" firstAttribute="leading" secondItem="aN6-CP-uva" secondAttribute="leading" id="Spw-e6-wYB"/>
+                <constraint firstItem="BWp-fD-fhG" firstAttribute="top" secondItem="aN6-CP-uva" secondAttribute="top" id="TkR-Rf-7CK"/>
+                <constraint firstItem="Ebv-eD-07I" firstAttribute="top" secondItem="BWp-fD-fhG" secondAttribute="bottom" id="XOD-A1-zVl"/>
+                <constraint firstAttribute="trailing" secondItem="Ebv-eD-07I" secondAttribute="trailing" id="i9s-6e-W1w"/>
+                <constraint firstAttribute="bottom" secondItem="Ebv-eD-07I" secondAttribute="bottom" id="kzw-Mg-zhn"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imageView" destination="BWp-fD-fhG" id="jgD-yX-XID"/>
