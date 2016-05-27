@@ -12,6 +12,8 @@ private let NibName = "CardView"
 
 class CardView: UIView {
     
+    @IBOutlet var imageView: UIImageView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setup()
