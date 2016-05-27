@@ -15,6 +15,8 @@
 		0D3BA4641CF73BFB00746C99 /* CardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BA4631CF73BFB00746C99 /* CardViewTests.swift */; };
 		0D3BA46F1CF73BFB00746C99 /* CardViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BA46E1CF73BFB00746C99 /* CardViewUITests.swift */; };
 		0D3BA47E1CF7436E00746C99 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3BA47D1CF7436E00746C99 /* OverlayView.xib */; };
+		0D3BA4811CF8822800746C99 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BA4801CF8822800746C99 /* CardView.swift */; };
+		0D3BA4831CF8824C00746C99 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3BA4821CF8824C00746C99 /* CardView.xib */; };
 		34DAD112FB7A54781E511866 /* Pods_CardViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179746197C029F56823418D9 /* Pods_CardViewTests.framework */; };
 		6612A240B4684739786A9A55 /* Pods_CardView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196493CF5732A9B305D9CC43 /* Pods_CardView.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		0D3BA46E1CF73BFB00746C99 /* CardViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewUITests.swift; sourceTree = "<group>"; };
 		0D3BA4701CF73BFB00746C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D3BA47D1CF7436E00746C99 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OverlayView.xib; path = ../Pods/Koloda/Pod/Classes/KolodaView/OverlayView/OverlayView.xib; sourceTree = "<group>"; };
+		0D3BA4801CF8822800746C99 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = CardView/CardView.swift; sourceTree = "<group>"; };
+		0D3BA4821CF8824C00746C99 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardView.xib; path = CardView/CardView.xib; sourceTree = "<group>"; };
 		12E811CFD484AE2464479030 /* Pods-CardView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardView/Pods-CardView.release.xcconfig"; sourceTree = "<group>"; };
 		179746197C029F56823418D9 /* Pods_CardViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		196493CF5732A9B305D9CC43 /* Pods_CardView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +115,7 @@
 		0D3BA44D1CF73BFB00746C99 /* CardView */ = {
 			isa = PBXGroup;
 			children = (
+				0D3BA47F1CF881D800746C99 /* Card */,
 				0D3BA44E1CF73BFB00746C99 /* AppDelegate.swift */,
 				0D3BA4501CF73BFB00746C99 /* ViewController.swift */,
 				0D3BA4521CF73BFB00746C99 /* Main.storyboard */,
@@ -138,6 +143,15 @@
 				0D3BA4701CF73BFB00746C99 /* Info.plist */,
 			);
 			path = CardViewUITests;
+			sourceTree = "<group>";
+		};
+		0D3BA47F1CF881D800746C99 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				0D3BA4801CF8822800746C99 /* CardView.swift */,
+				0D3BA4821CF8824C00746C99 /* CardView.xib */,
+			);
+			name = Card;
 			sourceTree = "<group>";
 		};
 		2EFCAB7DCE3A0C0709C2BD5F /* Pods */ = {
@@ -272,6 +286,7 @@
 			files = (
 				0D3BA4591CF73BFB00746C99 /* LaunchScreen.storyboard in Resources */,
 				0D3BA47E1CF7436E00746C99 /* OverlayView.xib in Resources */,
+				0D3BA4831CF8824C00746C99 /* CardView.xib in Resources */,
 				0D3BA4561CF73BFB00746C99 /* Assets.xcassets in Resources */,
 				0D3BA4541CF73BFB00746C99 /* Main.storyboard in Resources */,
 			);
@@ -392,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3BA4511CF73BFB00746C99 /* ViewController.swift in Sources */,
+				0D3BA4811CF8822800746C99 /* CardView.swift in Sources */,
 				0D3BA44F1CF73BFB00746C99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
