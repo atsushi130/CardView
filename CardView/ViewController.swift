@@ -15,12 +15,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var cardView: KolodaView!
     
-    private var dataSource: Array<UIImage> = {
-        var array: Array<UIImage> = []
+    private var cardInformations: [CardInformation] = {
+        var array = [CardInformation]()
         for index in 0..<numberOfCards {
-            array.append(UIImage(named: "Card_like_\(index + 1)")!)
+            array.append(CardInformation(image: UIImage(named: "Card_like_\(index + 1)")!, userImage: UIImage(), name: "\(index)さん", location: "Tokyo"))
         }
-        
         return array
     }()
     
@@ -44,7 +43,7 @@ class ViewController: UIViewController {
 extension ViewController: KolodaViewDelegate {
     
     func kolodaDidRunOutOfCards(koloda: KolodaView) {
-        dataSource.insert(UIImage(named: "Card_like_6")!, atIndex: self.cardView.currentCardIndex - 1)
+        //self.cardInformations.insert(UIImage(named: "Card_like_6")!, atIndex: self.cardView.currentCardIndex - 1)
         let position = self.cardView.currentCardIndex
         self.cardView.insertCardAtIndexRange(position...position, animated: true)
     }
@@ -58,13 +57,13 @@ extension ViewController: KolodaViewDelegate {
 extension ViewController: KolodaViewDataSource {
     
     func kolodaNumberOfCards(koloda:KolodaView) -> UInt {
-        return UInt(dataSource.count)
+        return UInt(self.cardInformations.count)
     }
     
     func koloda(koloda: KolodaView, viewForCardAtIndex index: UInt) -> UIView {
         //return display UIView
         let cardView = NSBundle.mainBundle().loadNibNamed("CardView", owner: self, options: nil)[0] as! CardView
-        cardView.imageView.image = dataSource[Int(index)]
+        cardView.setCardInformation(self.cardInformations[Int(index)])
         
         return cardView
     }
