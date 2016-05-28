@@ -63,7 +63,10 @@ extension ViewController: KolodaViewDataSource {
     
     func koloda(koloda: KolodaView, viewForCardAtIndex index: UInt) -> UIView {
         //return display UIView
-        return UIImageView(image: dataSource[Int(index)])
+        let cardView = NSBundle.mainBundle().loadNibNamed("CardView", owner: self, options: nil)[0] as! CardView
+        cardView.imageView.image = dataSource[Int(index)]
+        
+        return cardView
     }
     
     func koloda(koloda: KolodaView, viewForCardOverlayAtIndex index: UInt) -> OverlayView? {
