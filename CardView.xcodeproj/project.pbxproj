@@ -115,7 +115,7 @@
 		0D3BA44D1CF73BFB00746C99 /* CardView */ = {
 			isa = PBXGroup;
 			children = (
-				0D3BA47F1CF881D800746C99 /* Card */,
+				0D3BA47F1CF881D800746C99 /* CardView */,
 				0D3BA44E1CF73BFB00746C99 /* AppDelegate.swift */,
 				0D3BA4501CF73BFB00746C99 /* ViewController.swift */,
 				0D3BA4521CF73BFB00746C99 /* Main.storyboard */,
@@ -145,13 +145,13 @@
 			path = CardViewUITests;
 			sourceTree = "<group>";
 		};
-		0D3BA47F1CF881D800746C99 /* Card */ = {
+		0D3BA47F1CF881D800746C99 /* CardView */ = {
 			isa = PBXGroup;
 			children = (
 				0D3BA4801CF8822800746C99 /* CardView.swift */,
 				0D3BA4821CF8824C00746C99 /* CardView.xib */,
 			);
-			name = Card;
+			name = CardView;
 			sourceTree = "<group>";
 		};
 		2EFCAB7DCE3A0C0709C2BD5F /* Pods */ = {
