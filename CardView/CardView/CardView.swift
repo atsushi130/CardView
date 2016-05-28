@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias CardInformation = (image: UIImage, userImage: UIImage, name: String, location: String)
+
 class CardView: UIView {
     
     @IBOutlet var imageView:     UIImageView!
@@ -23,10 +25,10 @@ class CardView: UIView {
         super.init(coder: aDecoder)
     }
     
-    func setCardInfo(image: UIImage, userImage: UIImage, name: String, location: String) {
-        self.imageView.image     = image
-        self.userImageView.image = userImage
-        self.nameLabel.text      = name
-        self.locationLabel.text  = location
+    func setCardInformation(cardInformation: CardInformation) {
+        self.imageView.image     = cardInformation.image
+        self.userImageView.image = cardInformation.userImage
+        self.nameLabel.text      = cardInformation.name
+        self.locationLabel.text  = cardInformation.location
     }
 }
