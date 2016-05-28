@@ -10,9 +10,9 @@ import UIKit
 
 class CardView: UIView {
     
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var imageView:     UIImageView!
     @IBOutlet var userImageView: UIImageView!
-    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var nameLabel:     UILabel!
     @IBOutlet var locationLabel: UILabel!
     
     override init(frame: CGRect) {
