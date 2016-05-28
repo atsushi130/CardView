@@ -11,20 +11,43 @@
             <rect key="frame" x="0.0" y="0.0" width="322" height="498"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWp-fD-fhG">
-                    <rect key="frame" x="0.0" y="0.0" width="322" height="348"/>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebv-eD-07I">
                     <rect key="frame" x="0.0" y="348" width="322" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ジョン・ペトルーシ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feg-o7-qLi">
+                            <rect key="frame" x="100" y="8" width="214" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Un2-6P-OTX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="feg-o7-qLi" secondAttribute="trailing" constant="8" id="4OA-1S-isd"/>
+                        <constraint firstItem="feg-o7-qLi" firstAttribute="leading" secondItem="Ebv-eD-07I" secondAttribute="leading" constant="100" id="ICD-56-CFn"/>
+                        <constraint firstItem="feg-o7-qLi" firstAttribute="top" secondItem="Ebv-eD-07I" secondAttribute="top" constant="8" id="TWI-yv-Wnr"/>
                         <constraint firstAttribute="height" constant="150" id="deV-1E-xPl"/>
                     </constraints>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWp-fD-fhG">
+                    <rect key="frame" x="0.0" y="0.0" width="322" height="348"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MS3-2u-Yey">
+                    <rect key="frame" x="20" y="313" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="5OC-SD-teM"/>
+                        <constraint firstAttribute="height" constant="70" id="d6v-72-5UZ"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="MS3-2u-Yey" secondAttribute="bottom" constant="115" id="4WO-Nf-11z"/>
                 <constraint firstItem="Ebv-eD-07I" firstAttribute="leading" secondItem="aN6-CP-uva" secondAttribute="leading" id="CSf-JS-nOS"/>
+                <constraint firstItem="MS3-2u-Yey" firstAttribute="leading" secondItem="aN6-CP-uva" secondAttribute="leading" constant="20" id="D0u-8c-wLB"/>
                 <constraint firstItem="Ebv-eD-07I" firstAttribute="top" secondItem="BWp-fD-fhG" secondAttribute="bottom" id="Ds9-zB-GgP"/>
                 <constraint firstAttribute="trailing" secondItem="BWp-fD-fhG" secondAttribute="trailing" id="Iko-Gn-FLQ"/>
                 <constraint firstItem="BWp-fD-fhG" firstAttribute="leading" secondItem="aN6-CP-uva" secondAttribute="leading" id="Spw-e6-wYB"/>
