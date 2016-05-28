@@ -15,12 +15,21 @@
                     <rect key="frame" x="0.0" y="348" width="322" height="150"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ジョン・ペトルーシ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feg-o7-qLi">
-                            <rect key="frame" x="100" y="8" width="214" height="35"/>
+                            <rect key="frame" x="100" y="8" width="214" height="25"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="35" id="Un2-6P-OTX"/>
+                                <constraint firstAttribute="height" constant="25" id="Un2-6P-OTX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サンフランシスコ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLK-s0-qnh">
+                            <rect key="frame" x="100" y="33" width="214" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="dGd-eY-BeB"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.36758814102564108" green="0.36758814102564108" blue="0.36758814102564108" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -28,8 +37,11 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="feg-o7-qLi" secondAttribute="trailing" constant="8" id="4OA-1S-isd"/>
                         <constraint firstItem="feg-o7-qLi" firstAttribute="leading" secondItem="Ebv-eD-07I" secondAttribute="leading" constant="100" id="ICD-56-CFn"/>
+                        <constraint firstItem="wLK-s0-qnh" firstAttribute="leading" secondItem="Ebv-eD-07I" secondAttribute="leading" constant="100" id="PP1-xE-UiN"/>
                         <constraint firstItem="feg-o7-qLi" firstAttribute="top" secondItem="Ebv-eD-07I" secondAttribute="top" constant="8" id="TWI-yv-Wnr"/>
+                        <constraint firstItem="wLK-s0-qnh" firstAttribute="top" secondItem="feg-o7-qLi" secondAttribute="bottom" id="bxc-sO-73u"/>
                         <constraint firstAttribute="height" constant="150" id="deV-1E-xPl"/>
+                        <constraint firstAttribute="trailing" secondItem="wLK-s0-qnh" secondAttribute="trailing" constant="8" id="zEa-UT-s9m"/>
                     </constraints>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWp-fD-fhG">
@@ -59,6 +71,9 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imageView" destination="BWp-fD-fhG" id="jgD-yX-XID"/>
+                <outlet property="locationLabel" destination="wLK-s0-qnh" id="w7U-Zs-Ovl"/>
+                <outlet property="nameLabel" destination="feg-o7-qLi" id="4Tn-AI-9RK"/>
+                <outlet property="userImageView" destination="MS3-2u-Yey" id="Eac-Xj-rwF"/>
             </connections>
             <point key="canvasLocation" x="523" y="403"/>
         </view>
